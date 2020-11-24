@@ -19,8 +19,8 @@ public class Ellipse {
 
         public Ellipse(Ellipse otherEllipse) {
         startPoint = new Point(otherEllipse.startPoint);
-        height = otherEllipse.a;
-        width = otherEllipse.b;
+        a = otherEllipse.a;
+        b = otherEllipse.b;
     }
      public boolean isValid() {
         return a > 0 && b > 0;
@@ -36,7 +36,7 @@ public class Ellipse {
         } while (!isValid());
     }
     public double calculatePerimeter() {
-        return Math.PI(3 * (a + b) - Math.sqrt((3 * a + b) *(a + 3 * b))); 
+        return Math.PI(3.0 * (a + b) - Math.sqrt((3 * a + b) *(a + 3.0 * b))); 
     }
     public double calculateArea() {
         return Math.PI * a * b;
