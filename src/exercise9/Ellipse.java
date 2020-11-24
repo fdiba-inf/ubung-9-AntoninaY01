@@ -39,7 +39,7 @@ public class Ellipse {
         return Math.PI * (3.0 * (a + b) - Math.sqrt((3 * a + b) *(a + 3.0 * b))); 
     }
     public double calculateArea() {
-        return Math.PI * a * b;;
+        return Math.PI * a * b;
     }
      public String getType() {
         return (a == b) ? "Cycle" : "Ellipse";
